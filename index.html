@@ -1,41 +1,43 @@
 
-<html lang = "en-US">
- <head>
- <meta charset = "UTF-8">
-       <p>Laugh it out</p>
-<!-- Header -->
-      <div><header id="header" class="skel-layers-fixed">
-      <h1><a href="#">FopDOODLE</a></h1>
-      <li><a href="index.html">Home</a></li>
-      <li><a class="button special" href="#">Sign Up</a></li>
-       <title>textBoxes.html</title>
-       <script type = "text/javascript">
-  // from textBoxes.html
-  function sayHi(){
-  var txtName = document.getElementById("txtName");
-  var txtOutput = document.getElementById("txtOutput");
-  var name = txtName.value;
-  txtOutput.value = "No you are fat, " + name + "!"
-  } // end sayHi
- </script>
- </head>
-    <h2><strong>Say something mean</strong></h2>
-   </body>
- <form action = >
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Header -->
+  <div>
+    <header id="header" class="skel-layers-fixed">
+      <h1 align="center"><a>FopDOODLE</a></h1>
+      <script type="text/javascript">
+        // from textBoxes.html
+        function sayHi(){
+        var txtName = document.getElementById("txtName");
+        var txtOutput = document.getElementById("txtOutput");
+        var name =txtName.value;
+          name = name.toLowerCase();
+        if(name.includes("fat")){
+          txtOutput.value= "You are not fat, your thick!";
+        }else if("chubby"){
+          txtOutput.value="You are not chubby, your a cute bubble";
+        }else{
+          txtOutput.value="";
+        }
+        }
+      </script>
+</head>
+<h2 align="center"><strong>Sometimes you just need to :)</strong></h2>
+<h2 id="disc" align="center"><strong>Sometimes online harrasament can be serious. If this is the case, please click on the following<a  href="https://www.kidshelpphone.ca/Teens/PhoneUs.aspx" target="_blank"> link</a> to report it.</strong> </h2>
+</body>
+<form action=>
   <fieldset>
-  <label>Type your input: </label>
-  <input type = "text"
-    id = "txtName" />
-  <input type = "button"
-    value = "click me"
-    onclick = "sayHi()"/>
-  <input type = "text"
-    id = "txtOutput" />
+    <label align="center" id="Whatdid">What did the person say? </label>
+    <input align="center" , "left" type="text" id="txtName" />
+    <input align="center" type="button" id="btnClick" value="Fop it" onclick="sayHi()" />
+    <input align="center" type="button" id="btnClick2" value="DOODLE"/>
+    <input align="center" type="text" id="txtOutput" />
   </fieldset>
- </form>
-  <input type = "button"
-    value = "click me 2"
-    onclick = "a()"/>
-   <div class="output"></div>
- </body>
+</form>
+</body>
+
 </html>
+</div>

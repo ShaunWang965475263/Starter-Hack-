@@ -14,17 +14,40 @@
         var txtOutput = document.getElementById("txtOutput");
         var name =txtName.value;
           name = name.toLowerCase();
-        if(name.includes("fat")){
+        
+         if(name.match(new RegExp('(fat|obese|overweight|chubby)'))){//("fat")){
           var fatOptions =["I’m in shape. Round is a shape.", "I love my body"];
           var randomNumber = Math.floor(Math.random()*fatOptions.length);
           txtOutput.value= fatOptions[randomNumber];
+      
         }else if(name.includes("you should")){
-          var youOptions=[];
-          txtOutput.value="I didn’t realize you were an expert on my life??";
-        }else if(name.includes("stupid")){
-          txtOutput.value= "Just because you’ve chosen a label for me doesn’t mean I’ve chosen to wear it.";
-          }else{
-          txtOutput.value="";
+          var youOptions=["I didn’t realize you were an expert on my life.", "It’s funny how the people who know me the least have the most to say." , 
+                          "Some people will always have something to say and nothing to contribute."];
+           var randomNumber2 = Math.floor(Math.random()*youOptions.length);
+          txtOutput.value= youOptions[randomNumber2];
+        
+        }else if(name.match(new RegExp('(gay|bitch|fag|faggot)'))){//"gay", "butch", "fag", "faggot")){
+          var gayOptions = ["There's nothing wrong with my sexuality."]
+           var randomNumber3 = Math.floor(Math.random()*gayOptions.length);
+          txtOutput.value= gayOptions[randomNumber3];
+          
+        }else if(name.match(new RegExp('(stupid|dumb|ass|idiot|jerk)'))){//)name.includes("stupid" , "dumb", "ass", "idiot", "jerk")){
+          var stupidOptions =  ["Just because you’ve chosen a label for me doesn’t mean I’ve chosen to wear it.", "I’ve been called worse by better.", 
+                                "Real mature.", "Don’t waste your breath."];
+           var randomNumber4 = Math.floor(Math.random()*stupidOptions.length);
+          txtOutput.value= stupidOptions[randomNumber4];
+          
+          }else if(name.match(new RegExp('(autistic|autism|cancerous|cancer|retard|retarded)'))){//"autistic", "autism", "cancerous", "cancer", "retard", "retarded")){
+          var autOptions=["Did you mean to be so rude?"];
+          txtOutput.value=autOptions[0];
+          }
+          else{
+          var otherOptions = ["Some people will always have something to say and nothing to contribute.", 
+                              "Judging another person does not define who they are…it defines who you are.",
+                             "Your words are meaningless to me."];
+         	var randomNumber5 = Math.floor(Math.random()*otherOptions.length);
+           txtOutput.value= otherOptions[randomNumber5];
+          //random number
         }
         }
       </script>

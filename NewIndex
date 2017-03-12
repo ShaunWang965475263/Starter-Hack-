@@ -1,0 +1,14 @@
+<html>
+<script type="text/javascript" src="script.js"></script>
+<h1 id="title">FloopDoodle</h1>
+<input type="text" id="myTextField"/>
+<input type="submit" id="byBtn" value="FL*** IT!" onclick="Function();"/>
+<p id="initial_comment"></p>
+<p id="big_come_back"></p>
+
+<input type="submit" id="btnVideo" value="Video CLICK" onclick="showVideo();"/>
+
+<div id="video_one" style="visibility: hidden">
+<iframe width="854" height="480" src="https://www.youtube.com/embed/rzc3_b_KnHc" frameborder="0" allowfullscreen></iframe>
+</div>
+</html>

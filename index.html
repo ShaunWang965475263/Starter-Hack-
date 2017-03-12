@@ -1,40 +1,41 @@
-<p>Laugh it out</p>
+
+<html lang = "en-US">
+ <head>
+ <meta charset = "UTF-8">
+       <p>Laugh it out</p>
 <!-- Header -->
-<div><header id="header" class="skel-layers-fixed">
-<h1><a href="#">FopDOODLE</a></h1>
-<li><a href="index.html">Home</a></li>
-<li><a class="button special" href="#">Sign Up</a></li>
-
-  
-  
-  <!-- One -->
-    <div class="inner">
+      <div><header id="header" class="skel-layers-fixed">
+      <h1><a href="#">FopDOODLE</a></h1>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="button special" href="#">Sign Up</a></li>
+       <title>textBoxes.html</title>
+       <script type = "text/javascript">
+  // from textBoxes.html
+  function sayHi(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var name = txtName.value;
+  txtOutput.value = "No you are fat, " + name + "!"
+  } // end sayHi
+ </script>
+ </head>
     <h2><strong>Say something mean</strong></h2>
-    </div>
-    <section id="one" class="wrapper style1"><header class="major"></header>
-    <div class="container">&nbsp;<img src="http://www.clker.com/cliparts/f/t/B/8/8/8/recodring-md.png" alt="" width="90" height="90" /><form id="frm1" action="/action_page.php">
-    <p>Meanie said: : <input name="textmessage" type="text" /></p>
-    <input type="button" value="Submit" /></form>
-      <script>
-      function myFunction() {
-                  document.getElementById("frm1").submit();
-      }
-      </script>
-<!--In this case the get element by id function returns the textmassagevalue !--></div>
-</section>
-
-  
-  <!-- Two -->
-      <section id="two" class="wrapper style2"><header class="major"></header>
-      <div class="container">
-      <section class="special"><br />
-      <p>Output: you should respond: <input name="response" type="text" /></p>
-      <form id="frm2" action="/action_page.php">
-<!--From here we need to have a the square output much larger// We also need to use this input as a variable to feed into the API if we are using the API!-->
-      </form>
-      <div class="container">&nbsp;<iframe src="https://www.youtube.com/embed/XGSy3_Czz8k" width="420" height="315">
-                      </iframe>"&gt; /&gt;</div>
-      </section>
-      </div>
-      </section>
-      </header></div>
+   </body>
+ <form action = >
+  <fieldset>
+  <label>Type your input: </label>
+  <input type = "text"
+    id = "txtName" />
+  <input type = "button"
+    value = "click me"
+    onclick = "sayHi()"/>
+  <input type = "text"
+    id = "txtOutput" />
+  </fieldset>
+ </form>
+  <input type = "button"
+    value = "click me 2"
+    onclick = "a()"/>
+   <div class="output"></div>
+ </body>
+</html>

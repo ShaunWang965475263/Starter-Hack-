@@ -1,0 +1,55 @@
+function Function(){
+    
+   var UserInput = document.getElementById('myTextField').value;
+   var MainInput = UserInput.toLowerCase();
+   var MainArray = MainInput.split(" ");
+   
+   if (MainArray.length <= 3) {
+   	document.getElementById("initial_comment").innerHTML = "Only 3 words?! Is that all you got? Try coming up with a REAL diss!";
+}  else if (MainArray.length >= 20) {
+		document.getElementById("initial_comment").innerHTML = "Your supposed to diss me... not ask me to edit your English Essay!?! Try coming up with a REAL diss!";
+}  else {
+    Comeback();
+}
+}
+
+function Comeback(){
+   var UserInput = document.getElementById('myTextField').value;
+   var MainInput = UserInput.toLowerCase();
+   var MainArray = MainInput.split(" ");
+   
+   for (i = 0; i < MainInput.length; i++) {
+   	if (MainInput[i] === "autistic" || MainInput[i] === "retarded" || MainInput[i] === "handicapped") {
+    	document.getElementById("big_come_back").innerHTML = "Comeback1";
+  } else if (MainInput[i] === "gay" || MainInput[i] === "lesbian" || MainInput[i] === "homosexual") {
+    	document.getElementById("big_come_back").innerHTML = "Comeback2";
+  } else { var x = Math.floor((Math.random() * 10)) 
+  		if (x == 1) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback3";
+    } else if (x == 2) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback4";
+    } else if (x == 3) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback5";
+    } else if (x == 4) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback6";
+    } else if (x == 5) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback7";
+    } else if (x == 6) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback8";
+    } else if (x == 7) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback9";
+    } else if (x == 8) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback10";
+    } else if (x == 0) {
+      	document.getElementById("big_come_back").innerHTML = "Comeback11";
+    } else {
+    		document.getElementById("big_come_back").innerHTML = "Comeback12";
+    }
+  }
+ } 
+}
+
+function showVideo() {
+	var vid = document.getElementById("video_one");
+	vid.style.visibility='visible';
+}

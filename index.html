@@ -16,10 +16,15 @@
         var name =txtName.value;
           name = name.toLowerCase();
         if(name.includes("fat")){
-          txtOutput.value= "I’m in shape. Round is a shape.";
-        }else if("chubby"){
-          txtOutput.value="You are not chubby, your a cute bubble";
-        }else{
+          var fatOptions =["I’m in shape. Round is a shape.", "I love my body"];
+          var randomNumber = Math.floor(Math.random()*fatOptions.length);
+          txtOutput.value= fatOptions[randomNumber];
+        }else if(name.includes("you should")){
+          var youOptions=[];
+          txtOutput.value="I didn’t realize you were an expert on my life??";
+        }else if(name.includes("stupid")){
+          txtOutput.value= "Just because you’ve chosen a label for me doesn’t mean I’ve chosen to wear it.";
+          }else{
           txtOutput.value="";
         }
         }

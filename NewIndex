@@ -6,9 +6,6 @@
 <p id="initial_comment"></p>
 <p id="big_come_back"></p>
 
-<input type="submit" id="btnVideo" value="Video CLICK" onclick="showVideo();"/>
+<a id="aaa" href="" target="_blank" onclick="test()">Doodle</a>
 
-<div id="video_one" style="visibility: hidden">
-<iframe width="854" height="480" src="https://www.youtube.com/embed/rzc3_b_KnHc" frameborder="0" allowfullscreen></iframe>
-</div>
 </html>

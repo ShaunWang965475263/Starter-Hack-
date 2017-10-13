@@ -30,4 +30,33 @@ recognition.onresult = function(event) {
   var color = event.results[0][0].transcript;
   diagnostic.textContent = 'Result received: ' + color;
   bg.style.backgroundColor = color;
+  document.getElementById('txtName').value = color;
 }
+
+
+function test() {
+	var vid = document.getElementById("aaa");
+	var x = Math.floor(Math.random() * 10)
+	if(x == 0) {
+		vid.href="https://youtu.be/A3CbnYyEM78?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 1) {
+		vid.href="https://youtu.be/-2wObTCymkA?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 2) {
+		vid.href="https://youtu.be/bW7CyOMewzI?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 3) {
+		vid.href="https://youtu.be/IWimMaFs-Kg?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 4) {
+		vid.href="https://youtu.be/4C__EkrBhH8?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 5) {
+		vid.href="https://youtu.be/dz4z8LKziBI?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 6) {
+		vid.href="https://youtu.be/gIPAd5Uqlo4?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 7) {
+		vid.href="https://youtu.be/lKlj6yYYT60?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else if(x == 8) {
+		vid.href="https://youtu.be/kbaLkDrGkng?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} else {
+		vid.href="https://youtu.be/wIuYGROc5zM?list=PL4vNWVNEpSi6_ABCzi2aakhr5hSKpgP_y";
+	} 
+}
+

@@ -1,0 +1,101 @@
+  /* header*/
+
+a {
+  font-style: bold;
+}
+
+h1 {
+  color: teal;
+  font-style: bold;
+  font-size: 4em;
+  font-family: "Times new roman"
+}
+
+h1 {
+  position: relative;
+  left: 10;
+  bottom: 0px;
+  top: 200px;
+}
+
+
+/*h2*/
+
+h2 {
+  color: teal;
+  position: relative;
+  left: 15px;
+  bottom: 0px;
+  top: 335px;
+}
+
+#Whatdid {
+  color: teal;
+  position: relative;
+  left: 680px;
+  bottom: 0px;
+  top: 155px;
+  font-size: 1.1em;
+}
+
+#txtName {
+  position: relative;
+  left: 485px;
+  bottom: 0px;
+  top: 200px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+
+#btnClick {
+  position: relative;
+  left: 350px;
+  bottom: 0px;
+  top: 400px;
+  color: white;
+  font-size: 24px;
+  background-color: teal;
+  border-radius: 4px
+}
+
+#txtOutput {
+  position: relative;
+  left: -70px;
+  bottom: 0px;
+  top: 450px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #94C1E3;
+  color: white;
+  font-size: 1.1em;
+}
+#disc{
+  color: teal;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  top: 550px;
+  font-size: 20px;
+}
+#btnClick2 {
+  position: relative;
+  left: 390px;
+  bottom: 0px;
+  top: 350px;
+  color: white;
+  font-size: 24px;
+  background-color: teal;
+  border-radius: 4px
+}
+#aaa{
+  color: green;
+  font-size: 30px;
+}
+
+body {
+  background: #94C1E3;
+}
